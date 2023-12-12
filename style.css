@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  scroll-behavior: smooth;
+  background-color: azure;
+  transition: 0.8s;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+.wrapper {
+  height: 3.3em;
+  width: 6.2em;
+  border-radius: 25%;
+  border: 1px solid rgb(167, 142, 142);
+  margin-left: 1em;
+  margin-top: 1em;
+  background-color: white;
+  transition: 0.8s;
+}
+.mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mblogo {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 0.1em;
+  animation: slideout;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+body.dark {
+  background-color: black;
+  transition: 0.8s;
+}
+
+.video {
+  display: none;
+}
+.search {
+  width: 40px;
+  height: 35px;
+  margin-top: 1.3em;
+}
+.searchcar {
+  display: none;
+  transition: 0.8s;
+  border: 1px solid rgb(206, 189, 189);
+  border-radius: 3%;
+  margin-top: 0.5em;
+}
+.form {
+  background-color: black;
+  background-color: rgb(191, 192, 193);
+}
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: red;
+  font-size: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.searchbtn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  transition: 0.8s;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+
+.searchcar.light {
+  display: block;
+}
+.nav-item1 {
+  display: flex;
+}
+.burger-layer,
+.burger-layer-2,
+.burger-layer-3 {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  margin-right: 1em;
+  margin-top: 0.1em;
+  transition: 0.8s;
+}
+
+.burger-layer-2,
+.burger-layer-3 {
+  margin-top: 0.1em;
+}
+.pcvid {
+  display: none;
+}
+.nav-item2 {
+  cursor: pointer;
+}
+
+.burger-layer.active,
+.burger-layer2.active,
+.burger-layer3.active {
+  color: white;
+}
+ul {
+  font-size: 5rem;
+  list-style-type: none;
+  text-decoration: none;
+}
+li {
+  border: 1px solid white;
+  text-align: center;
+  margin-top: 2em;
+  font-weight: 400;
+  font-family: "Fjalla One", sans-serif;
+  color: rgb(133, 123, 111);
+  cursor: pointer;
+}
+
+/* end of header */
+
+.box-1img,
+.box-2img {
+  width: 70%;
+  height: 100%;
+  margin: 3em 1em;
+}
+
+.box-1-h,
+.box-2-h {
+  filter: blur(0.4px);
+  box-shadow: 20px solid black;
+}
+.section1 {
+  height: auto;
+  width: 100%;
+  background-color: brown;
+  animation: slide2 ease-out;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  background-color: rgb(191, 192, 193);
+}
+.box-2-p {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 900;
+  width: 70%;
+  margin: 1.4em;
+  line-height: 2em;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+.box-1-p {
+  margin-top: 5em;
+  margin-right: 10em;
+  margin-left: 1em;
+}
+.box-1-h,
+.box-2-h {
+  margin-left: 1em;
+  font-size: 2rem;
+}
+
+.box-2 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 900;
+}
+
+/* section 2 */
+
+.accordion {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.accordion-item {
+  border: 1px solid #f40000;
+  margin-bottom: 5px;
+}
+
+.accordion-header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+  font-size: 1.4rem;
+  color: red;
+  font-weight: 700;
+}
+#commentsList {
+  font-size: 1.4rem;
+  padding: 1em 1em;
+}
+.user-comments {
+  border: 1px solid red;
+}

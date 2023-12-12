@@ -1,0 +1,182 @@
+@media screen and (min-width: 375px) {
+  #pcvideo {
+    display: none;
+  }
+  .box-1img {
+    width: 60%;
+    height: auto;
+  }
+  .box-1 {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-family: "Fjalla One", sans-serif;
+  }
+}
+@media screen and (min-width: 480px) {
+  .box-1img {
+    width: 65%;
+    height: auto;
+  }
+  .box-1 {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .box-1img {
+    width: 55%;
+    height: auto;
+  }
+  .box-1 {
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #pcvideo {
+    display: block;
+  }
+  .box-1img {
+    width: auto;
+
+    height: 100vh;
+  }
+  .box-2img {
+    width: auto;
+    height: 100vh;
+  }
+  .box-1-p,
+  .box-2-p {
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes slide {
+  from {
+    margin-left: 0;
+    transform: rotate(360deg);
+  }
+  to {
+    margin-left: 3em;
+    transform: rotate(720deg);
+  }
+}
+@keyframes slideout {
+  from {
+    margin-left: 3em;
+    transform: rotate(-360deg);
+  }
+  to {
+    margin-left: 0em;
+  }
+}
+@keyframes dropdown {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 1em;
+  }
+}
+@keyframes popup {
+  from {
+    margin-top: -100px;
+  }
+  to {
+    top: 52%;
+  }
+}
+@keyframes slide2 {
+  from {
+    margin-left: -100em;
+  }
+  to {
+    margin-left: 0em;
+  }
+}
+
+.searchcar:focus {
+  border: 1px solid rgb(193, 29, 29);
+  width: 10em;
+  height: 2em;
+  padding: 1em 0.3em;
+}
+.mblogo.active {
+  animation: slide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.wrapper.active {
+  background-color: black;
+  transition: 0.8s;
+  border-color: rgb(193, 29, 29);
+}
+.video.active {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+.searchcar.active {
+  display: block;
+  transition: 0.8s;
+  margin-right: 4em;
+  width: 10em;
+  animation: dropdown;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  margin-right: 2em;
+}
+.searchbtn.active {
+  color: white;
+  background-color: black;
+  transition: 0.8s;
+  font-size: 2.1rem;
+  margin-bottom: 0.1em;
+}
+.nav-item1.active {
+  background-color: white;
+}
+.burger-layer.active,
+.burger-layer-2.active,
+.burger-layer-3.active {
+  background-color: white;
+  width: 22px;
+  height: 4px;
+  transition: 0.8s;
+}
+.mobile.active {
+  border: 2px dotted rgb(145, 36, 19);
+  padding: 1em 1em;
+  filter: blur(0.3px);
+
+  transition: 0.5s;
+}
+.popup {
+  display: none;
+}
+.popup.active {
+  position: absolute;
+  width: 80%;
+  height: auto;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(210, 210, 210);
+  animation: popup;
+  animation-duration: 0.5s;
+  overflow: hidden;
+  max-width: 100%;
+  position: fixed;
+  border-radius: 3%;
+  display: block;
+  z-index: 1;
+  filter: blur(0.2px);
+}
+li:hover {
+  color: red;
+  transition: 0.1s;
+}
